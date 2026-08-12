@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../schema/thread.v2.schema.json",
+  "schemaVersion": 2,
+  "threadId": "019faa33-9741-7a10-bf14-b81f7f5d6377",
+  "title": "只回复 HARNESS_OK_20260729，不要调用工具。",
+  "submittedBy": {
+    "githubLogin": "o-oOvOo-o",
+    "gitName": "0xAdrain"
+  },
+  "createdAt": "2026-07-28T19:28:55.868Z",
+  "publishedAt": "2026-08-11T11:23:22Z",
+  "workspace": {
+    "project": "Cunning3D/Cunning3D-Dev",
+    "projectKey": "github:cunning3d/cunning3d-dev",
+    "team": "Cunning3D Core",
+    "teamKey": "cunning3d-core"
+  },
+  "source": {
+    "repository": "https://github.com/Cunning3D/Cunning3D-Dev",
+    "branch": "main",
+    "commit": "46aa074a430bbb7e80cd53239fe7ea6783cb4995"
+  },
+  "praxis": {
+    "model": "gpt-5.6-sol",
+    "modelProvider": "openai",
+    "cliVersion": "0.0.0",
+    "originator": "cunning3d_harness"
+  },
+  "stats": {
+    "messageCount": 2,
+    "redactionCount": 0
+  },
+  "conversation": [
+    {
+      "role": "user",
+      "phase": null,
+      "text": "只回复 HARNESS_OK_20260729，不要调用工具。"
+    },
+    {
+      "role": "assistant",
+      "phase": "final_answer",
+      "text": "HARNESS_OK_20260729"
+    }
+  ],
+  "provenance": {
+    "rolloutSha256": "1b45cd4acd34bcda009e6a220b603a8d6a8c9a8909e97d53477659cbdbcdfe9e",
+    "redactions": []
+  }
+}

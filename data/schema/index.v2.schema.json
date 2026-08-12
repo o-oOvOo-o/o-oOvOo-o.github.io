@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/o-oOvOo-o/praxis-threads/schema/index.v2.schema.json",
+  "title": "Praxis thread index v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schemaVersion", "generatedAt", "threads"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 2 },
+    "generatedAt": { "type": ["string", "null"], "format": "date-time" },
+    "threads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["threadId", "title", "submittedBy", "publishedAt", "path", "messageCount", "project", "projectKey", "team", "teamKey"],
+        "properties": {
+          "threadId": { "type": "string", "minLength": 1 },
+          "title": { "type": "string", "minLength": 1 },
+          "submittedBy": { "type": "string", "minLength": 1 },
+          "publishedAt": { "type": "string", "format": "date-time" },
+          "path": { "type": "string", "pattern": "^threads/" },
+          "messageCount": { "type": "integer", "minimum": 1 },
+          "project": { "type": "string", "minLength": 1 },
+          "projectKey": { "type": "string", "pattern": "^github:" },
+          "team": { "type": "string", "minLength": 1, "maxLength": 64 },
+          "teamKey": { "type": "string", "minLength": 1 },
+          "model": { "type": ["string", "null"] },
+          "repository": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}
